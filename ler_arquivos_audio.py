@@ -1,5 +1,5 @@
 import speech_recognition as sr
-
+# Arroz, feijão, e Batata
 rec = sr.Recognizer()
 
 with sr.AudioFile("teste.wav") as arquivo_audio:
