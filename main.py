@@ -6,8 +6,8 @@ rec = sr.Recognizer()
 # - ouvir o audio do microfone
 # para escolher qual microfone vamos usar, rode:
 # print(sr.Microphone().list_microphone_names())
-with sr.Microphone(device_index=3) as microfone:
-    rec.adjust_for_ambient_noise(microfone)
+with sr.Microphone(device_index=3) as mic:
+    rec.adjust_for_ambient_noise(mic)
     print("Pode começar a falar:")
 
     # rec.pause_threshold = 1 # coloque isso se quiser que ele demore mais para entender que uma pausa é o fim do audio
